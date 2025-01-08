@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { send } from "emailjs-com"; 
@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const Contact = () => {
   const [fromName, setFromName] = useState('');
-  const [toName, setToName] = useState('Your Name');
+  const [toName, setToName] = useState('');
   const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
@@ -38,18 +38,17 @@ const Contact = () => {
         }
       );
   };
-  
 
   return (
     <div className="bg-slate-700 p-6 font-serif">
       <div className="flex justify-center items-center h-screen text-white">
-        <div className="flex w-3/4">
-          <div className="w-1/2">
-            <h1 className="text-3xl font-bold mb-8">CONTACT ME</h1>
+        <div className="flex flex-col lg:flex-row w-full lg:w-3/4">
+          <div className="lg:w-1/2 p-4 animate-slideLeftToRight">
+            <h1 className="text-3xl font-bold mb-8 mt-6">CONTACT ME</h1>
             <div className="border-b-2 border-blue-500 w-16 ml-10 mb-4 mt-0"></div>
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 flex justify-center items-center border-2 border-white rounded-full mr-4">
-                <FaPhone />
+                <FaPhoneAlt />
               </div>
               <span>6284415949</span>
             </div>
@@ -66,9 +65,9 @@ const Contact = () => {
               <span>#1244 Sector-52, D Chandigarh</span>
             </div>
           </div>
-          <div className="w-1/2">
+
+          <div className="lg:w-1/2 p-4 animate-slideRightToLeft">
             <form className="space-y-4" onSubmit={sendEmail}>
-              
               <input
                 type="text"
                 name="username"

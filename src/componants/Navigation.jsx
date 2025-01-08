@@ -42,15 +42,7 @@ const Navigation = () => {
             Projects
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/resume"
-            className="font-bold hover:text-slate-500"
-            activeClassName="text-slate-300"
-          >
-            Resume
-          </NavLink>
-        </li>
+       
         <li>
           <NavLink
             to="/contact"
