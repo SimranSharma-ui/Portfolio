@@ -1,8 +1,7 @@
 import React from 'react';
 
-const Projects = () => {
-  const posts = [
-   
+const Frontendprojects = () => {
+  const Frontendproject = [
     {
       category: "PokéPal",
       title: "Pokemon Website",
@@ -14,7 +13,7 @@ const Projects = () => {
     {
       category: "WeatherSphere",
       title: "Weather App",
-      link: "https://weather-6cfwfvieg-simrans-projects-dee52ad7.vercel.app/", 
+      link: "https://weather-app-psi-seven-84.vercel.app/", 
       image: "https://miro.medium.com/v2/resize:fit:1400/0*GJqID-iVs0NDF35M",
       alt: "Weather App",
       github:"https://github.com/SimranSharma-ui/Weather-app",
@@ -72,10 +71,10 @@ const Projects = () => {
   return (
     <div className="bg-slate-700 min-h-screen"> 
       <div className="container mx-auto py-8">
-        <h2 className="text-4xl text-white text-center font-bold my-3 font-serif">Projects</h2>
+        <h2 className="text-4xl text-white text-center font-bold my-3 font-serif"> Frontend Projects</h2>
         <div className="border-b-2 border-blue-500 w-16 mx-auto mt-2"></div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4 font-serif">
-          {posts.map((post, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 mx-4 font-serif">
+          {Frontendproject.map((post, index) => (
             <div key={index} className="bg-gray-800 text-white rounded-xl animate-fadeInFromBottom">
               <img src={post.image} alt={post.alt} className="w-full h-64 object-cover rounded-xl"/>
               <div className="p-4">
@@ -99,4 +98,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Frontendprojects;

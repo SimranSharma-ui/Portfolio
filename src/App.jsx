@@ -4,19 +4,21 @@ import Navigation from './componants/Navigation';
 import Home from './componants/Home';
 import About from './componants/About';
 
-import Projects from './componants/Projects';
+import Frontendprojects from "./componants/FrontendProject";
 import Skills from './componants/Skills';
 import Contact from './componants/Contact';
+import FullStackProjects from './componants/FullStackProjects';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/FrontendProjects" element={<Frontendprojects />} />
+        <Route path='/FullStackProjects' element={<FullStackProjects/>}/>
      
         <Route path="/contact" element={<Contact />} />
       </Routes>
