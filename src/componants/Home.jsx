@@ -16,7 +16,7 @@ const Home = () => {
           Simran Sharma
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white font-serif animate-fadeIn">
-          I am doing training in MERN Stack Development From Sensation Software Solution.
+          Full Stack Web Developer (Mern)
         </p>
         <a
           href="https://drive.google.com/uc?export=download&id=1Pw2B36EkTIO1zfHhIhiF3D4DbUx6xbHY"

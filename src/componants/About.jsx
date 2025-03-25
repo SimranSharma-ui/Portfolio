@@ -5,7 +5,7 @@ const About = () => {
     {
       degree: "Training In Mern Stack Development",
       institution: "Sensation Software Solution, Phase 8, Industrial Area, Mohali",
-      year: "Currently",
+      year: "20,Sep,2024 to 20,Feb,2025",
     },
     {
       degree: "Post Graduate Diploma In Computer Application",

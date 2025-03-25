@@ -26,7 +26,14 @@ const Navigation = () => {
           bg-slate-900 md:bg-transparent transition-all duration-300 ease-in-out 
           ${menuOpen ? 'top-16 opacity-100 visible p-6' : 'top-[-400px] opacity-0 invisible'} md:opacity-100 md:visible`}
         >
-          {["Home", "About", "Skills", "FrontendProjects","FullStackProjects", "Contact"].map((item) => (
+          <ul>
+          <NavLink to={"/"}>
+          <li className='font-bold hover:text-slate-500 transition-all'>Home</li>
+
+          </NavLink>
+
+          </ul>
+          {[ "About", "Skills", "FrontendProjects","FullStackProjects", "Contact"].map((item) => (
             <li key={item} className="py-2 md:py-0">
               <NavLink
                 to={`/${item.toLowerCase()}`}
