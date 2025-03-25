@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../assets/logo2.png"
 
 const Frontendprojects = () => {
   const Frontendproject = [
@@ -41,6 +42,14 @@ const Frontendprojects = () => {
         image: "https://marketplace.canva.com/EAFwIYYGYSo/1/0/1600w/canva-colorful-retro-illustrative-tasty-popcorn-logo-orfOhmyQqEI.jpg",
         alt: "Movie App",
         github:"https://github.com/SimranSharma-ui/Movie-App",
+      },
+      {
+        category: "CricketHub",
+        title: "Cricket App",
+        link: "https://cricket-hub-git-main-simrans-projects-dee52ad7.vercel.app/", 
+        image: logo,
+        alt: "Cricket App",
+        github:"https://github.com/SimranSharma-ui/CricketHub",
       },
       {
         category: "Mystery Digits",
