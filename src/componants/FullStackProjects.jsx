@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.png";
-import Shopping from "../assets/shopping1.png"
+import Shopping from "../assets/Shopping1.png";
 
 const FullStackProjects = () => {
     const Project = [
